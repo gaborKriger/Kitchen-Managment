@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7971a49e-cef4-4eb1-87e0-15a11615bb0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Employees/Employees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Chefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/HasKnife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7971a49e-cef4-4eb1-87e0-15a11615bb0d" name="Default Changelist" comment="create classes">
+      <change afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/CanCook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Util/MyRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employees/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees/KitchenStaff/Chefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Chefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees/KitchenStaff/HasKnife.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,41 +29,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="14" />
+          <entry key="java" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="240" />
+          <entry key="java" value="900" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="240" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="900" />
+          <entry key="PLAIN_TEXT" value="23" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.45895523">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="26">
-                  <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#64#65#0" expanded="true" />
-                    <element signature="e#114#115#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="78">
+                  <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
                 </state>
               </provider>
             </entry>
@@ -70,26 +68,45 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Employees/Employees.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Cooking.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="91">
-                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="312">
+                  <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#278#279#0" expanded="true" />
+                    <element signature="e#310#311#0" expanded="true" />
+                    <element signature="e#303#304#0" expanded="true" />
+                    <element signature="e#343#344#0" expanded="true" />
+                    <element signature="e#387#388#0" expanded="true" />
+                    <element signature="e#423#424#0" expanded="true" />
+                    <element signature="e#487#488#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/HasKnife.java">
+            <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/CanCook.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="117">
-                  <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+                <state relative-caret-position="208">
+                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+                  <folding>
+                    <element signature="e#180#181#0" expanded="true" />
+                    <element signature="e#211#212#0" expanded="true" />
+                    <element signature="e#260#261#0" expanded="true" />
+                    <element signature="e#300#301#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Util/MyRandom.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="104">
+                  <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#181#182#0" expanded="true" />
+                    <element signature="e#241#242#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -98,20 +115,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Chefs.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="143">
+                  <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Cooks.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="130">
+                  <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -119,10 +136,12 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="52">
-                  <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+                <state relative-caret-position="377">
+                  <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#555#556#0" expanded="true" />
+                    <element signature="e#605#606#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -135,8 +154,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,12 +169,16 @@
         <option value="$PROJECT_DIR$/src/Employees/KitchenWorkers/Chefs.java" />
         <option value="$PROJECT_DIR$/src/Employees/KitchenWorkers/Cooks.java" />
         <option value="$PROJECT_DIR$/src/Employees/KitchenWorkers/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/Employees/Employees.java" />
         <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooking.java" />
-        <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/HasKnife.java" />
+        <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/CanCook.java" />
+        <option value="$PROJECT_DIR$/src/Employees/Employees.java" />
         <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/Chefs.java" />
         <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/Cooks.java" />
+        <option value="$PROJECT_DIR$/src/Employees/Util/MyRandom.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyRandom.java" />
+        <option value="$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java" />
       </list>
     </option>
   </component>
@@ -196,13 +219,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Employees" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Kitchen Managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kitchen Managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Employees" type="462c0819:PsiDirectoryNode" />
-              <item name="KitchenStaff" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -213,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546939815157" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546942750274" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -254,12 +270,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546938438647</updated>
-      <workItem from="1546938441843" duration="1193000" />
+      <workItem from="1546938441843" duration="4398000" />
     </task>
+    <task id="LOCAL-00001" summary="create classes">
+      <created>1546939851543</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546939851543</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1193000" />
+    <option name="totallyTimeSpent" value="4398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="25" width="1331" height="743" extended-state="6" />
@@ -270,15 +294,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16575876" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6101142" visible="true" weight="0.16575876" />
+      <window_info id="Structure" order="1" sideWeight="0.3898858" side_tool="true" visible="true" weight="0.16575876" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32952693" />
+      <window_info anchor="bottom" id="Terminal" weight="0.21859707" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,6 +324,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="create classes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Employees/Chef.java">
@@ -331,57 +360,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding>
-            <element signature="e#64#65#0" expanded="true" />
-            <element signature="e#114#115#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="78">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Employees/Employees.java">
+    <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/HasKnife.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Cooking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Employees/Employees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="377">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Chefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="143">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/Cooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="130">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/HasKnife.java">
+    <entry file="file://$PROJECT_DIR$/src/Employees/KitchenStaff/CanCook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="208">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
