@@ -1,11 +1,13 @@
 package Employees;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public abstract class Employees {
 
     private String name;
-    private Date birthDay;
+    private LocalDate birthDay;
     private double salary;
     private double tax;
 
@@ -14,8 +16,10 @@ public abstract class Employees {
         this.name = name;
     }
 
-    public void setBirthDay(Date birthDay) {
-        this.birthDay = birthDay;
+    public void setBirthDay(String birthDate) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.ENGLISH);
+        LocalDate date = LocalDate.parse(birthDate, formatter);
+        this.birthDay = date;
     }
 
     public void setSalary(double salary) {

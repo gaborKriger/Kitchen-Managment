@@ -1,10 +1,9 @@
 package Employees.KitchenStaff;
 
-import java.util.Date;
 
 public class Chefs extends CanCook {
 
-    public Chefs(String name, Date birthDate, double salary) {
+    public Chefs(String name, String birthDate, double salary) {
         super.setName(name);
         super.setBirthDay(birthDate);
         super.setSalary(salary);

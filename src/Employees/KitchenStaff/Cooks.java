@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Cooks extends CanCook {
 
-    public Cooks(String name, Date birthDate, double salary) {
+    public Cooks(String name, String birthDate, double salary) {
         super.setName(name);
         super.setBirthDay(birthDate);
         super.setSalary(salary);
