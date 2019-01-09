@@ -27,11 +27,13 @@ public class WorkingKitchenStaff {
     }
 
     public void working() {
-        for (int i = 0; i < 100; i++) {
+        int countRound = 0;
+        for (int i = 0; i < 50; i++) {
+            setChefIsCooking(false);
+            countRound++;
+            System.out.println("\u001B[31m" + "\nRound: " + countRound + "\u001B[0m");
             chefIsCooking();
-            if (isChefIsCooking()){
-                takeIngredients();
-            }
+
         }
     }
 
@@ -41,6 +43,10 @@ public class WorkingKitchenStaff {
                 ((Chefs) worker).setCooking(randomBoolean());
                 if (((Chefs) worker).isCooking()) {
                     setChefIsCooking(true);
+                    System.out.print("\u001B[32m" + "Chef (" + worker.getName() + ")is cooking" + "\u001B[0m");
+                    if (isChefIsCooking()){
+                        takeIngredients();
+                    }
                 }
             }
         }
@@ -48,11 +54,25 @@ public class WorkingKitchenStaff {
 
     private void takeIngredients() {
         String requiredIngredient = randomIngredients();
+        System.out.println(", he needs " + requiredIngredient + ".");
+        boolean giveIngredients = false;
         for (Employees worker : workers) {
             if (worker instanceof Helpers) {
                 Map<String,Integer> helperIngredients = ((Helpers) worker).getHelperHand();
-                if (helperIngredients.get(requiredIngredient) > 0) {
+                String helperName = worker.getName();
+                System.out.println(helperName + " has " + helperIngredients.get(requiredIngredient) + " " + requiredIngredient + ".");
+                if (helperIngredients.get(requiredIngredient) > 0 && !giveIngredients) {
                     helperIngredients.put(requiredIngredient, helperIngredients.get(requiredIngredient)-1);
+                    giveIngredients = true;
+                }
+            }
+        }
+        if (!giveIngredients) {
+            System.out.println("\u001B[35m" + "We're all out!" + "\u001B[0m");
+            for (Employees worker : workers) {
+                if (worker instanceof Helpers) {
+                    ((Helpers) worker).addIngredients(requiredIngredient);
+                    System.out.println(worker.getName() + " go to the fridge, and take " + ((Helpers) worker).getHelperHand().get(requiredIngredient) + " " + requiredIngredient + ".");
                 }
             }
         }
