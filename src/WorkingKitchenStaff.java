@@ -3,6 +3,7 @@ import Employees.KitchenStaff.Chefs;
 import Employees.KitchenStaff.Helpers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -26,14 +27,14 @@ public class WorkingKitchenStaff {
         workers.add(employee);
     }
 
-    public void working() {
+    public void working(int turn) {
         int countRound = 0;
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < turn; i++) {
+            Collections.shuffle(workers);
             setChefIsCooking(false);
             countRound++;
             System.out.println("\u001B[31m" + "\nRound: " + countRound + "\u001B[0m");
             chefIsCooking();
-
         }
     }
 
@@ -43,7 +44,7 @@ public class WorkingKitchenStaff {
                 ((Chefs) worker).setCooking(randomBoolean());
                 if (((Chefs) worker).isCooking()) {
                     setChefIsCooking(true);
-                    System.out.print("\u001B[32m" + "Chef (" + worker.getName() + ")is cooking" + "\u001B[0m");
+                    System.out.print("\u001B[32m" + "Chef (" + worker.getName() + ") is cooking" + "\u001B[0m");
                     if (isChefIsCooking()){
                         takeIngredients();
                     }
@@ -64,11 +65,12 @@ public class WorkingKitchenStaff {
                 if (helperIngredients.get(requiredIngredient) > 0 && !giveIngredients) {
                     helperIngredients.put(requiredIngredient, helperIngredients.get(requiredIngredient)-1);
                     giveIngredients = true;
+                    System.out.println("\u001B[33m" + helperName + " gave the Chef " + requiredIngredient + ". Now (s)he has " + helperIngredients.get(requiredIngredient) + " " + requiredIngredient + "." + "\u001B[0m");
                 }
             }
         }
         if (!giveIngredients) {
-            System.out.println("\u001B[35m" + "We're all out!" + "\u001B[0m");
+            System.out.println("\u001B[35m" + "We're all out! We're all out!" + "\u001B[0m");
             for (Employees worker : workers) {
                 if (worker instanceof Helpers) {
                     ((Helpers) worker).addIngredients(requiredIngredient);
@@ -76,5 +78,6 @@ public class WorkingKitchenStaff {
                 }
             }
         }
+        System.out.println();
     }
 }
